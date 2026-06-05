@@ -1,0 +1,38 @@
+
+body{
+	background-color : #DFEEF7;	
+}
+
+	
+   
+p{
+	
+}
+form{
+	padding : 10px;
+	background-color:#3F9AD1;
+	margin:50px;
+}
+img{
+	
+	 display:block;
+	 margin:auto; 
+	 height : 300px; 
+	 width : 400px; 
+	 border :3px solid black;
+	 border-radius:50%;
+	 object-fit:container ;
+}
+h1,h2{
+	
+	color:Blue;
+}
+
+table{
+	font-size:20px;
+	background-color:Yellow;
+}
+th{
+	font-size:30px;
+	background-color:green;
+}

@@ -1,0 +1,15 @@
+table{
+	background-color : green;
+	font-size : 10px;
+}
+body{
+	background-color : pink;
+}
+h1{
+	color : blue;
+}
+th{
+	background-color : yellow;
+	color : Black;
+	font-size : 15px;
+}

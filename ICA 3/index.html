@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyBook Airlines - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">✈️ SkyBook <span>AIRLINES</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="flights.html">Search Flights</a></li>
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="#site-footer">About Us</a></li>
+			<li><a href="#site-footer">Contact Us</a></li>
+    
+        </ul>
+        
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your <span>Journey,</span><br>Our Priority</h1>
+            <p>Search flights, book tickets and explore the world with SkyBook Airlines.</p>
+        </div>
+    </header>
+
+    <section class="booking-widget-container">
+        <div class="booking-widget">
+            <div class="trip-type">
+                <label><input type="radio" name="trip" checked> Round Trip</label>
+                <label><input type="radio" name="trip"> One Way</label>
+                <label><input type="radio" name="trip"> Multi City</label>
+            </div>
+            <form action="flights.html" method ="Get" class="search-form">
+                <div class="input-group">
+                    <label>From</label>
+                    <input type ="text" name="from">Colombo (CMB)</input>
+                </div>
+                
+                <div class="input-group">
+                    <label>To</label>
+                   <select name ="To" required>
+						<option value ="DXB">Dubai,UAE(DXB)</option>
+						<option value ="SIN">Singapore(SIN)</option>
+						<option value ="KUL">Kuala Lumpur,Malaysia(KUL)</option>
+						<option value ="BKK">Bangkok,Thailand(BKK)</option>
+						
+					</select>
+                </div>
+                <div class="input-group">
+					<label for="date">Departure</label>
+                    <input type="date" id="date" required>   
+                </div>
+                
+                <div class="input-group">
+                    <label>Passengers</label>
+                    <select name ="passenger">
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-search">Search Flights ✈️</button>
+            </form>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="grid-layout">
+            
+            <div class="left-column">
+                <section class="section-block">
+                    <h2>Popular Destinations</h2>
+                    <div class="destinations-grid">
+                        <div class="dest-card">
+                            <img src="Dubai Skyline, UAE Travel Inspiration.jpg" alt="Dubai">
+                            <div class="dest-info"><h3>Dubai</h3><p>From <span>$320</span></p></div>
+                        </div>
+                        <div class="dest-card">
+                            <img src="Singapore City Skyline Themed Artwork_ Digital Download, Printable Art for Crafting, Wall Art - Copy.jpg" alt="Singapore">
+                            <div class="dest-info"><h3>Singapore</h3><p>From <span>$210</span></p></div>
+                        </div>
+                        <div class="dest-card">
+                            <img src="Bangkok city.jpg" alt="Bangkok">
+                            <div class="dest-info"><h3>Bangkok</h3><p>From <span>$240</span></p></div>
+                        </div>
+                        <div class="dest-card">
+                            <img src="🌏Ultimate Kuala Lumpur Itinerary_ Must-See Spots & Hidden Gems!🏯.jpg" alt="Kuala Lumpur">
+                            <div class="dest-info"><h3>Kuala Lumpur</h3><p>From <span>$180</span></p></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-block offer-banner">
+                    <div class="offer-text">
+                        <span>Summer Special</span>
+                        <h2>Get up to <span>30% OFF</span></h2>
+                        <p>On selected international flights</p>
+                        <button class="btn-book-now" onclick="location.href='flights.html'">Book Now</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="section-block info-panel">
+                    <h2>Why Choose SkyBook?</h2>
+                    <div class="info-item">
+                        <div class="info-icon">🏷️</div>
+                        <div><h4>Best Price Guarantee</h4><p>We ensures you get the best deals.</p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⚡</div>
+                        <div><h4>Easy & Quick Booking</h4><p>Book your tickets in just a few clicks.</p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🎧</div>
+                        <div><h4>24/7 Customer Support</h4><p>We're here to help you anytime.</p></div>
+                    </div>
+                </section>
+
+                <section class="section-block info-panel">
+                    <div class="panel-header">
+                        <h2>Top Flights</h2>
+                        
+                    </div>
+                    <div class="flight-row">
+                        <div><strong>Colombo (CMB)</strong><br><small>20 May, 2026</small></div>
+                        <div class="route-line">✈️<br><small>Non-stop • 4h 25m</small></div>
+                        <div><strong>Dubai (DXB)</strong></div>
+                        <div class="price">$320</div>
+                    </div>
+                    <div class="flight-row">
+                        <div><strong>Colombo (CMB)</strong><br><small>22 May, 2026</small></div>
+                        <div class="route-line">✈️<br><small>Non-stop • 4h 10m</small></div>
+                        <div><strong>Singapore (SIN)</strong></div>
+                        <div class="price">$210</div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    
+<!-- Modern Footer with Details -->
+<footer id="site-footer" class="main-footer">
+    <div class="footer-top">
+        <div class="footer-grid">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-col">
+                <h3 class="footer-logo">Sky<span>Book</span></h3>
+                <p class="footer-desc">Crafting digital excellence with modern designs and cutting-edge technology. Let's make your vision a reality.</p>
+                <div class="social-links">
+                    <a href="#">Fb</a>
+                    <a href="#">In</a>
+                    <a href="#">Tw</a>
+                    <a href="#">Li</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="booking.html">Book Appointment</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Details -->
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <p>123, Future Tech Avenue, Colombo 07, Sri Lanka.</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>+94 77 123 4567<br>+94 11 234 5678</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">✉️</span>
+                    <p>support@yourbrand.com<br>info@yourbrand.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 YourBrand Digital. All Rights Reserved.</p>
+        <div class="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

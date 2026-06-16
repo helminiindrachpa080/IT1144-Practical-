@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Booking Portal</title>
+    
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">✈️ SkyBook <span>AIRLINES</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="flights.html">Search Flights</a></li>
+			<li><a href="booking.html">Booking</a></li>
+			<li><a href="#site-footer">About Us</a></li>
+			<li><a href="#site-footer">Contact Us</a></li>
+    
+        </ul>
+        
+    </nav>
+
+
+    <div class="booking-container">
+        <h2>Book Your Slot</h2>
+        <p class="subtitle">Fill out the form below to secure your appointment.</p>
+        
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="John Doe" required>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="077 123 4567" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select id="service" required>
+                    <option value="" disabled selected>Choose a service...</option>
+                    <option value="Web Development">Meals & Beverages</option>
+                    <option value="UI/UX Designing">WiFi Onboard</option>
+                    <option value="Consultation">Duty Free Shopping</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Special Notes (Optional)</label>
+                <textarea id="notes" rows="3" placeholder="Tell us more about your requirement..."></textarea>
+            </div>
+
+			<button type="submit" class="btn-submit" onclick="showSuccess(event)">Confirm Booking</button>
+
+	<div id="successPopup" class="popup-overlay">
+		<div class="popup-content">
+			<div class="popup-icon">✓</div>
+			<h2>Booking Confirmed!</h2>
+			<p>Your booking has been successfully processed.</p>
+			<button class="btn-close" onclick="closePopup()">OK</button>
+		</div>
+	</div>
+	</form> 
+ 
+  <script src="script.js"></script>
+  
+</body>
+</html>
